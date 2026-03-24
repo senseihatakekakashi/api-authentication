@@ -101,7 +101,7 @@ laravel new api-authentication
    - Username: `root`
    - Password: `password`
 3. Create a new database named **`api-demo`**
-4. Set the character set to `utf8mb4` and collation to `utf8mb4_unicode_ci`
+4. Set the character set to `utf8mb4` and collation to `utf8mb4_general_ci` or `utf8mb4_unicode_ci`
 
 ### Option B: Using the MySQL CLI
 
@@ -109,7 +109,7 @@ laravel new api-authentication
 mysql -u root -p
 -- Enter your password when prompted --
 
-CREATE DATABASE `api-demo` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE `api-demo` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 EXIT;
 ```
 
